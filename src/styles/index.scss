@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*|| RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* || GENERAL STYLES*/
+body main {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  min-width: 100wh;
+  font-size: large;
+}
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+//app styling
+
+.search-container-center {
+  min-height: 100vh;
+  min-width: 100wh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .search {
+    margin: 0 auto;
+    min-width: 70%;
+    min-height: 2rem;
+    display: flex;
+    border: 1px solid #dcdcdc;
+    .search-input {
+      flex: 8;
+      border: none;
+      outline: none;
+      font-size: large;
+      padding: 12px 20px;
+    }
+    .search-button {
+      flex: 1;
+      position: relative;
+      font-size: large;
+    }
+  }
+  .search:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+  .search:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
+  }
+}
+
+.search-container-top {
+  min-height: 10vh;
+  min-width: 100wh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0px 10px 0 10px;
+  .search {
+    flex: 8;
+    min-width: 70%;
+    min-height: 2rem;
+    display: flex;
+    border: 1px solid #dcdcdc;
+    .search-input {
+      flex: 8;
+      border: none;
+      outline: none;
+      font-size: large;
+      padding: 12px 20px;
+    }
+    .search-button {
+      flex: 1;
+      position: relative;
+      font-size: large;
+    }
+  }
+  .search:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+  .search:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
+  }
+}
+
+.gif-list {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  .gif-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    .gif-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
